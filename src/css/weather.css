@@ -1,0 +1,205 @@
+@font-face {
+    font-family: 'Roboto-Thin';
+    src: url('../font/Roboto-Thin.ttf');
+}
+
+@font-face {
+    font-family: 'Roboto-Bold';
+    src: url('../font/Roboto-Bold.ttf');
+}
+
+@font-face {
+    font-family: 'Dosis-ExtraLight';
+    src: url('../font/Dosis-ExtraLight.ttf');
+}
+
+@font-face {
+    font-family: 'Dosis-Medium';
+    src: url('../font/Dosis-Medium.ttf');
+}
+
+@font-face {
+    font-family: 'wIcon';
+    src: url('../font/weathericons-regular-webfont.ttf');
+}
+
+@font-face {
+    font-family: 'wIcon2';
+    src: url('../font/weathericons-regular-webfont.svg');
+}
+
+@font-face {
+    font-family: 'wIcon3';
+    src: url('../font/weathericons-regular-webfont.woff');
+}
+
+@font-face {
+    font-family: 'wIcon4';
+    src: url('../font/weathericons-regular-webfont.woff2');
+}
+
+@font-face {
+    font-family: 'wIcon5';
+    src: url('../font/weathericons-regular-webfont.eot');
+}
+
+#topRight {
+    display: block;
+    max-width: 50vw;
+    height: 100%;
+    height: -webkit-fill-available;
+    width: 50%;
+    width: -webkit-fill-available;
+    float: right;
+    overflow: hidden;
+    margin-top: 3vh;
+}
+
+#temp {
+    font-size: 4em;
+    margin-right: 7%;
+    float: right;
+    color: #fff;
+    text-decoration: none;
+    width: 70%;
+    height: 20%;
+    font-family: Roboto-Thin, Verdana, sans-serif;
+    vertical-align: middle;
+    transition: all .5s ease;
+    align-items: center;
+    white-space: nowrap;
+}
+
+#iconTemp {
+    font-family: wIcon, wIcon2, wIcon3, wIcon4, wIcon5;
+}
+
+#iconTemp i {
+    font-size: 1em;
+    font-style: normal;
+    flex: 1;
+    text-align: center;
+    vertical-align: middle;
+    justify-content: center;
+    align-content: center;
+}
+
+#tempRow1 td {
+    width: 100%;
+    padding: 0px 5px;
+    text-align: center;
+    vertical-align: middle;
+    justify-content: center;
+    align-content: center;
+    font-size: 2em;
+}
+
+#tempRow1 {
+    padding: 0px;
+    width: 100%;
+}
+
+#tempRow2 {
+    font-size: 1em;
+    text-align: center;
+    white-space: nowrap;
+	color: #cacaca;
+}
+
+#tempRow2 td {
+   width: 100%;
+   padding: 0px 5px;
+   text-align: center;
+   vertical-align: middle;
+   justify-content: center;
+   align-content: center;
+   font-size: .8em;
+}
+
+main {
+    width: 100vw;
+    height: 50vh;
+    position: absolute;
+    top: 35vh;
+    left: 0;
+}
+
+#left {
+    width: 50vw;
+    height: 100%;
+    float: left;
+    display: inline-block;
+}
+
+#right {
+    width: 50vw;
+    height: 100%;
+    display: inline-block;
+}
+
+.gradient {
+    z-index: 100;
+    position: absolute;
+    top: 0;
+    left: 50vw;
+    width: 50vw;
+    height: 100%;
+    display: inline-block;
+    background: rgba(0,0,0,0);
+    background: -moz-linear-gradient(270deg, rgba(255,255,255,0) 0%, rgba(0,0,0,1) 100%); /* ff3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(255,255,255,0)), color-stop(100%, rgba(0,0,0,1))); /* safari4+,chrome */
+    background: -webkit-linear-gradient(270deg, rgba(255,255,255,0) 0%, rgba(0,0,0,1) 100%); /* safari5.1+,chrome10+ */
+    background: -o-linear-gradient(270deg, rgba(255,255,255,0) 0%, rgba(0,0,0,1) 100%); /* opera 11.10+ */
+    background: -ms-linear-gradient(270deg, rgba(255,255,255,0) 0%, rgba(0,0,0,1) 100%); /* ie10+ */
+    background: linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(0,0,0,1) 100%); /* w3c */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#FFFFFF', endColorstr='#000000',GradientType=0 ); /* ie6-9 */
+}
+
+#tempFC {
+    font-size: 2em;
+    color: #fff;
+    text-decoration: none;
+    width: 70%;
+    height: 20%;
+    font-family: Roboto-Thin, Verdana, sans-serif;
+    vertical-align: middle;
+    transition: all .5s ease;
+    text-align: center;
+    align-items: center;
+    white-space: nowrap;
+    max-width: 30vw;
+    border-collapse: collapse;
+    float: right;
+    margin: 0px 8%;
+}
+
+#tempFC td {
+    border-bottom: 3px solid white;
+    padding: 10px 0px;
+}
+
+#tempFC td:last-child {
+    text-align: right;
+}
+
+#tempFCRow0 td {
+   padding: 15px 0px;
+}
+    
+#iconFC1, #iconFC2, #iconFC3, #iconFC4, #iconFC5 {
+    font-size: 1em;
+    font-style: normal;
+    text-align: center;
+    vertical-align: middle;
+    justify-content: center;
+    align-content: center;
+    font-family: wIcon, wIcon2, wIcon3, wIcon4, wIcon5;
+}
+
+td.timeFC {
+    font-size: 0.8em;
+}
+td.timeFC::after {
+    content: ".";
+}
+

@@ -1,0 +1,52 @@
+@font-face {
+    font-family: 'Roboto-Thin';
+    src: url('../fonts/Roboto-Thin.ttf');
+    }
+
+@font-face {
+    font-family: 'Roboto-Bold';
+    src: url('../fonts/Roboto-Bold.ttf');
+    }
+
+@font-face {
+    font-family: 'Dosis-ExtraLight';
+    src: url('../fonts/Dosis-ExtraLight.ttf');
+    }
+
+@font-face {
+    font-family: 'Dosis-Medium';
+    src: url('../fonts/Dosis-Medium.ttf');
+    }	
+	
+html {
+	overflow: hidden;
+	background: black
+}
+
+#body {
+	font-family: Arial, sans-serif;
+	font: 2em;
+	color: white;
+	display: block;
+}
+
+header {
+	position: absolute;
+	top: 0;
+	left: 0;
+    height: 35vh;
+    width: 100vw;
+    overflow: hidden;
+    font-size: .9vw
+}
+
+#msg {
+	font-family: Roboto-Thin, sans-serif;
+	font-size: 5em;
+	color: white;
+	display: block;
+	position: absolute;
+	top: 45vh;
+	left: 40vw;
+	transition: all .5s ease;
+}

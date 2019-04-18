@@ -1,0 +1,113 @@
+﻿<!doctype html>
+<html lang="fr" style="width: 100%; height: 100%;">
+<head>
+	  <title>Smart Mirror by Negrel</title>
+	  <icon icon=""></icon>
+	  <meta charset="utf-8">
+	  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+	  <link href="img/icon.png" type="image/png" rel="icon">
+	  <link href="css/main.css" type="text/css" rel="stylesheet">
+	  <link href="css/clock.css" type="text/css" rel="stylesheet">
+	  <link href="css/weather.css" type="text/css" rel="stylesheet">
+	  <link href="css/weather-icons.css" type="text/css" rel="stylesheet">
+	  <link href="css/calendar.css" type="text/css" rel="stylesheet">
+		  <!-- Insert this line above script imports  -->
+	  <script>if (typeof module === 'object') {window.module = module; module = undefined;}</script>
+</head>
+<body style=" width: 100%; height: 100%;">
+	<header>
+		<div id="topLeft">
+			<div id="calendar">
+				<label id="numDays">NJOUR</label>
+				<label id="days">JOUR</label>
+				<label id="months">MOIS</label>
+				<label id="years">ANNEE</label>
+			</div>
+			<div id="clock">
+				<label id="hours">hh</label>
+				<label id="dots"> : </label> 
+				<label id="minutes">mm</label>
+			</div>
+		</div>
+		<div id="topRight">
+			<table id="temp">	
+				<tr id="tempRow1">
+					<td id="iconTemp"><i id="icon" class="wi"></i></td>
+					<td><label id="currentTemp">TEMP</label>°C</td>
+				</tr>
+				<tr id="tempRow2">
+				<td id="tempDesc" colspan="1">DESC</td>
+				<td id="maxMinTemp"><label id="minTemp">MINTEMP</label>°C / <label id="maxTemp">MAXTEMP</label>°C</td>
+				</tr>
+			</table>
+
+			<div id="humidity">
+			</div>
+			<div id="wind">
+			</div>
+		</div>
+	</header>
+    <main>
+        <div id="left">
+			<div class="gradient2"></div>
+			<div id="noEvents" style="display: none;">Pas d'évenements prévu dans les jours à venir...</div>
+			<div id="animation1">
+				<div id="eventsTitle">Cette semaine :</div>
+				<table id="eventsTab"></table>
+			</div>
+			<div id="animation2">
+				<div id="eventsTitle2">La semaine prochaine :</div>
+				<table id="eventsTab2"></table>
+			</div>
+		</div>
+        <div id="right">
+			<div class="gradient"></div>
+            <table id="tempFC">
+                <tr id="tempFCRow0">
+                    <td colspan="2">Température</td>
+                    <td>Description</td>
+                    <td>Jour</td>
+                </tr>
+                <tr id="tempFCRow1">
+                    <td id="iconFC1"><i id="icon" class="wi"></i></td>
+                    <td><label id="tempFC1">TEMP</label>°C</td>
+                    <td id="descFC1">DESC</td>
+                    <td id="timeFC1" class="timeFC"><label>Demain</label></td>
+                </tr>
+                <tr id="tempFCRow2">
+                    <td id="iconFC2"><i id="icon" class="wi"></i></td>
+                    <td><label id="tempFC2">TEMP</label>°C</td>
+                    <td id="descFC2">DESC</td>
+                    <td id="timeFC2" class="timeFC"><label>J</label></td>
+                </tr>
+                <tr id="tempFCRow3">
+                    <td id="iconFC3"><i id="icon" class="wi"></i></td>
+                    <td><label id="tempFC3">TEMP</label>°C</td>
+                    <td id="descFC3">DESC</td>
+                    <td id="timeFC3" class="timeFC"><label>JJ</label></td>
+                </tr>
+                <tr id="tempFCRow4">
+                    <td id="iconFC4"><i id="icon" class="wi"></i></td>
+                    <td><label id="tempFC4">TEMP</label>°C</td>
+                    <td id="descFC4">DESC</td>
+                    <td id="timeFC4" class="timeFC"><label>JJJ</label></td>
+                </tr>
+                <tr id="tempFCRow5">
+                    <td id="iconFC5"><i id="icon" class="wi"></i></td>
+                    <td><label id="tempFC5">TEMP</label>°C</td>
+                    <td id="descFC5">DESC</td>
+                    <td id="timeFC5" class="timeFC"><label>JJJJ</label></td>
+                </tr>
+            </table>
+        </div>
+    </main>
+	<footer>
+	</footer>
+	<!-- normal script imports etc  -->
+	<script src="js/jquery.js"></script>    
+	<script src="js/time.js"></script>	  
+	<script src="js/weatherAJAX.js"></script>	
+	<script src="js/calendarGAPI.js"></script>
+	<!--<script src="app.js"></script>-->
+</body>
+</html>

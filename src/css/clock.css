@@ -1,0 +1,75 @@
+#bg {
+	width: 100%;
+	height: 100%;
+	background-image: url('../img/bg.png');
+	background-size: 100%;
+	filter: blur(20px);
+}
+
+#topLeft {
+    display: block;
+    max-width: 50vw;
+    padding: 0px;
+    margin: 0px;
+    float: left;
+    overflow: hidden;
+    height: 100%;
+    height: -webkit-fill-available;
+    width: 50%;
+    width: -webkit-fill-available;
+}
+
+#clock {
+	white-space: nowrap;
+	font-size: 4em;
+	color: #fff;
+	text-decoration: none;
+	width: 50%;
+	height: 20%;
+	font-family: Roboto-Thin, Verdana, sans-serif;
+	position: relative;
+	top: 50px;
+	left: 50px;	
+	vertical-align: middle;
+	transition: all .5s ease;
+}
+
+#hours {
+	font-size: 2em;
+}
+
+#dots {
+	vertical-align: super;
+}
+
+#minutes {
+	font-size: 2em;
+}
+
+#calendar {
+	white-space: nowrap;
+	font-size: 4em;
+	color: #cacaca;
+	text-decoration: none;
+	width: 50%;
+	height: 20%;
+	font-family: Dosis-ExtraLight, Roboto-Medium, Verdana, sans-serif;
+	position: relative;
+	top: 50px;
+	left: 50px;
+	vertical-align: middle;
+	transition: all .5s ease;
+	
+}
+
+#numDays {
+	font-size: 1em;
+	font-style: Dosis-ExtraLight ,Roboto-Medium, Verdana, sans-serif;
+}
+
+#days, #months {
+	position: relative;
+	/* top: 56px; */
+	/* left: -260px; */
+	font-size: 1em;
+}

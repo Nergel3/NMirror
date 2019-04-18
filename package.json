@@ -1,0 +1,42 @@
+{
+  "name": "nmirror",
+  "version": "1.0.0",
+  "description": "A javascript smartmirror project.",
+  "main": "main.js",
+  "repository": "https://github.com/Nergel3/NMirror",
+  "scripts": {
+    "start": "electron .",
+    "pack": "build --dir",
+    "dist": "build"
+  },
+  "build": {
+    "linux": {
+      "target": [
+        "AppImage",
+        "deb"
+      ]
+    },
+    "win": {
+      "target": "NSIS",
+      "icon": "./icon.ico"
+    }
+  },
+  "keywords": [
+    "smartmirror",
+    "smart",
+    "mirror",
+    "javascript",
+    "js",
+    "connected",
+    "desktop",
+    "app",
+    "electron"
+  ],
+  "author": "Alexandre Negrel",
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "electron": "latest",
+    "electron-builder": "^20.38.5",
+    "node-static": "^0.7.11"
+  }
+}

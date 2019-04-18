@@ -1,0 +1,106 @@
+#left {
+    overflow: hidden;
+}
+
+.gradient2 {
+    z-index: 100;
+    position: absolute;
+    top: 0;
+    left: 0vw;
+    width: 50vw;
+    height: 100%;
+    display: inline-block;
+    background: rgba(0,0,0,0);
+    background: -moz-linear-gradient(270deg, rgba(255,255,255,0) 0%, rgba(0,0,0,1) 100%); /* ff3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(255,255,255,0)), color-stop(100%, rgba(0,0,0,1))); /* safari4+,chrome */
+    background: -webkit-linear-gradient(270deg, rgba(255,255,255,0) 0%, rgba(0,0,0,1) 100%); /* safari5.1+,chrome10+ */
+    background: -o-linear-gradient(270deg, rgba(255,255,255,0) 0%, rgba(0,0,0,1) 100%); /* opera 11.10+ */
+    background: -ms-linear-gradient(270deg, rgba(255,255,255,0) 0%, rgba(0,0,0,1) 100%); /* ie10+ */
+    background: linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(0,0,0,1) 100%); /* w3c */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#FFFFFF', endColorstr='#000000',GradientType=0 ); /* ie6-9 */
+}
+
+#eventsTab, #eventsTab2 {
+    margin: 0 5%;
+    font-family: Roboto-Thin, Verdana, sans-serif;
+    color: #ffffff;
+    font-size: 2em;
+    width: 75%;
+}
+
+#eventsTab2 {
+    max-height: 50%;
+}
+
+div#eventsTitle, div#eventsTitle2 {
+    font-family: Roboto-Thin, Verdana, sans-serif;
+    color: #ccc;
+    vertical-align: middle;
+    padding: 10px;
+    margin-bottom: 10px;
+    margin: 0 5%;
+    font-size: 2em;
+}
+
+tr.events {
+    padding: 0;
+    margin: -10px 0;
+    width: 60%;
+}
+
+tr.events td {
+    padding: 5px;
+    font-size: 0.6em;
+    width: 50%;
+}
+
+tr.events td i {
+    color: grey;
+    vertical-align: initial;
+    font-size: 0.9em;
+    padding: 2px 0;
+}
+
+tr.events td.hour {
+    color: grey;
+}
+
+div#noEvents {
+    color: white;
+    font-size: 1.5em;
+    padding: 10px;
+    margin: 0 5%;
+    font-family: Roboto-Thin, Verdana, sans-serif;
+}
+
+div {
+    transition: ease-in-out 1s;
+}
+
+@keyframes weekFade {
+    0% {
+        opacity: 1;
+        display: block;
+        height: 100%
+    }
+    15% {
+        opacity: 0;
+        height: 0%;
+        display: none;
+    }
+    50% {
+        opacity: 0;
+        height: 0%;
+        display: none;
+    }
+    65% {
+        opacity: 1;
+        height: 100%;
+        display: block;
+    }
+    100% {
+        opacity: 1;
+        display: block;
+    }
+}
+

@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<body>
+<script>
+  const alertOnlineStatus = () => {
+    if (navigator.onLine == false) {
+        alert("Aucune connexion. Impossible de lancer le mirroir.");
+    }
+  }
+
+  window.addEventListener('accesInternet',  alertOnlineStatus)
+
+  alertOnlineStatus()
+</script>
+</body>
+</html>
